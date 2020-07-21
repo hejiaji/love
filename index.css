@@ -1,0 +1,50 @@
+.section-main {
+    background-color: #41969c;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.section-main-title {
+    line-height: 200px;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+}
+
+.section-main-content {
+    font-size: 32px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-item-content {
+    height: 50px;
+    line-height: 20px;
+}
+
+.date-content {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-main-title {
+        line-height: 150px;
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .section-main-content {
+        font-size: 20px;
+        line-height: 70px;
+    }
+
+    .section-item-content {
+        padding: 0 8px;
+        text-align: center;
+        margin-top: 32px;
+    }
+}
