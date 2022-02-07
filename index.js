@@ -3,7 +3,7 @@ const calculateDaysBetween = (from, to) => {
 	 const now = new moment();
 	 const momentFrom = new moment(from);
 	 const diffDays = now.diff(momentFrom, 'days')
-	 return `${result.years} years, ${result.months} months, ${result.days} days \n (In total ${diffDays} days)`;
+	 return `${result.years} years, ${result.months} months, ${result.days} days (In total ${diffDays} days)`;
 };
 
 
