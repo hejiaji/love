@@ -19,5 +19,5 @@ window.onload = (event) => {
 	document.getElementById("engagement").innerText = calculateDaysBetween(engageDate, now).toString();
 	document.getElementById("marriage").innerText = calculateDaysBetween(marriedDate, now).toString();
 	document.getElementById("nolan").innerText = calculateDaysBetween(nolanBirthDate, now).toString();
-	document.getElementById("saiya").innerText = calculateDaysBetween(nolanBirthDate, now).toString();
+	document.getElementById("saiya").innerText = calculateDaysBetween(saiyaBirthDate, now).toString();
 };
