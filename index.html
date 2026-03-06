@@ -1,28 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="stylesheet" type="text/css" href="./index.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/app-icon.png"/>
     <title>J & A</title>
 </head>
 <body>
-    <div class="section-main">
-        <div class="section-main-title">
-            <div>Hi, Jeremy & Alyssa</div>
-        </div>
-        <div class="section-main-content">
-            <div class="section-item-content">It's been <span id="together" class="date-content"></span> since you've been together</div>
-            <div class="section-item-content">It's been <span id="engagement" class="date-content"></span> since your engagement</div>
-            <div class="section-item-content">It's been <span id="marriage" class="date-content"></span> since your marriage</div>
-            <div class="section-item-content">It's been <span id="nolan" class="date-content"></span> since Nolan comes out</div>
-            <div class="section-item-content">It's been <span id="saiya" class="date-content"></span> since Saiya comes out</div>
-        </div>
+    <div class="floating-hearts" aria-hidden="true">
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+    </div>
+
+    <div class="page">
+        <header class="hero">
+            <div class="hero-icon">&#10084;</div>
+            <h1 class="hero-title">Jeremy <span class="amp">&</span> Alyssa</h1>
+            <p class="hero-subtitle">A love story, in numbers</p>
+        </header>
+
+        <main class="timeline">
+            <div class="card" data-icon="&#128151;">
+                <div class="card-icon">&#128151;</div>
+                <h2 class="card-label">Together</h2>
+                <p class="card-date">August 8, 2015</p>
+                <p class="card-value" id="together"></p>
+            </div>
+
+            <div class="card" data-icon="&#128141;">
+                <div class="card-icon">&#128141;</div>
+                <h2 class="card-label">Engaged</h2>
+                <p class="card-date">August 12, 2017</p>
+                <p class="card-value" id="engagement"></p>
+            </div>
+
+            <div class="card" data-icon="&#128141;">
+                <div class="card-icon">&#128141;</div>
+                <h2 class="card-label">Married</h2>
+                <p class="card-date">February 14, 2018</p>
+                <p class="card-value" id="marriage"></p>
+            </div>
+
+            <div class="card" data-icon="&#128118;">
+                <div class="card-icon">&#128118;</div>
+                <h2 class="card-label">Nolan</h2>
+                <p class="card-date">May 5, 2021</p>
+                <p class="card-value" id="nolan"></p>
+            </div>
+
+            <div class="card" data-icon="&#128118;">
+                <div class="card-icon">&#128118;</div>
+                <h2 class="card-label">Saiya</h2>
+                <p class="card-date">August 25, 2023</p>
+                <p class="card-value" id="saiya"></p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Made with &#10084; for J & A</p>
+        </footer>
     </div>
 </body>
 </html>
